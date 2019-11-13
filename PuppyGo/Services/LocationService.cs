@@ -30,18 +30,22 @@ namespace PuppyGo.Services
             catch (FeatureNotSupportedException fnsEx)
             {
                 // Handle not supported on device exception
+                System.Diagnostics.Debug.WriteLine($"GetUsersLocation - FeatureNotSupportedException - {fnsEx.Message}");
             }
             catch (FeatureNotEnabledException fneEx)
             {
                 // Handle not enabled on device exception
+                System.Diagnostics.Debug.WriteLine($"GetUsersLocation - FeatureNotEnabledException - {fneEx.Message}");
             }
             catch (PermissionException pEx)
             {
                 // Handle permission exception
+                System.Diagnostics.Debug.WriteLine($"GetUsersLocation - PermissionException - {pEx.Message}");
             }
             catch (Exception ex)
             {
                 // Unable to get location
+                System.Diagnostics.Debug.WriteLine($"GetUsersLocation - Exception - {ex.Message}");
             }
 
             // no location for whatever reason - just return Atlanta

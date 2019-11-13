@@ -6,7 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" x:Class="PuppyGo.Views.AboutPage"
     xmlns:vm="clr-namespace:PuppyGo.ViewModels"
-    xmlns:helpers="clr-namespace:PuppyGo.Helpers"
+    xmlns:helpers="clr-namespace:PuppyGo.Helpers" NavigationPage.HasNavigationBar="False"
     Title="{helpers:Translate aboutpage_title}">
 
     <ContentPage.BindingContext>
@@ -40,7 +40,7 @@
 
             <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
 
-                <Label FontSize="22">
+                <Label FontSize="22" AutomationId="VersionLabel">
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>

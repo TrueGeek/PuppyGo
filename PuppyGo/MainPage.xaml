@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:helpers="clr-namespace:PuppyGo.Helpers"
+    xmlns:views="clr-namespace:PuppyGo.Views"
+    x:Class="PuppyGo.MainPage">
+
+    <NavigationPage Title="{helpers:Translate tabs_browse}" IconImageSource="tab_feed.png" AutomationId="BrowseTab">
+        <x:Arguments>
+            <views:ItemsPage />
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="{helpers:Translate tabs_about}" IconImageSource="tab_about.png" AutomationId="AboutTab">
+        <x:Arguments>
+            <views:AboutPage />
+        </x:Arguments>
+    </NavigationPage>
+
+</TabbedPage>

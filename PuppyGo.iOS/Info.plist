@@ -25,7 +25,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>PuppyGo</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.fweem.PuppyGo</string>
+	<string>com.fweem.puppygo</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>UILaunchStoryboardName</key>
