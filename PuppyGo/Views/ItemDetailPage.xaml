@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" x:Class="PuppyGo.Views.ItemDetailPage"
+    xmlns:helpers="clr-namespace:PuppyGo.Helpers"
+    Title="{Binding Animal.name}">
+
+    <StackLayout Spacing="20" Padding="15">
+
+        <Label Text="{helpers:Translate itemdetailspage_name_header}" FontSize="Medium" FontAttributes="Bold" />
+        <Label Text="{Binding Animal.name}" d:Text="Item name" FontSize="Small" />
+
+        <Label Text="{helpers:Translate itemdetailspage_description_header}" FontSize="Medium" FontAttributes="Bold" />
+        <Label Text="{Binding Animal.description}" d:Text="Item description" FontSize="Small" />
+
+        <Image Source="{Binding Photo}" />
+
+        <Button Margin="0,10,0,0" Text="{helpers:Translate itemdetailspage_adoptbutton_text}" Command="{Binding OpenWebCommand}" BackgroundColor="#2196F3" TextColor="White" />
+
+    </StackLayout>
+
+</ContentPage>
