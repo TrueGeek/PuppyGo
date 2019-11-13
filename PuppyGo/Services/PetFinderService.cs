@@ -44,11 +44,6 @@ namespace PuppyGo.Services
 
         }
 
-        public async Task GetDog(int dogId)
-        {
-
-        }
-
         private async Task<bool> GetAccessToken()
         {
 
