@@ -27,7 +27,7 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.fweem.puppygo</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>1.0.0.1</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
@@ -36,5 +36,7 @@
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>PuppyGo uses your location to show nearby puppies. How could you say no to that?</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
 </dict>
 </plist>
