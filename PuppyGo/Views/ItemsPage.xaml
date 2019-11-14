@@ -11,6 +11,7 @@
 
         <ListView
             x:Name="ItemsListView"
+            AutomationProperties.Name="List of puppies"
             ItemsSource="{Binding Items}"
             VerticalOptions="FillAndExpand" HasUnevenRows="true"
             RefreshCommand="{Binding LoadItemsCommand}" IsPullToRefreshEnabled="true" IsRefreshing="{Binding IsBusy, Mode=OneWay}"
