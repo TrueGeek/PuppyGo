@@ -16,19 +16,19 @@ echo "> Build UI test project"
 msbuild "$APPCENTER_SOURCE_DIRECTORY/PuppyGo.UITests/PuppyGo.UITests.csproj" /property:Configuration=debug
 
 echo "> Contents of $APPCENTER_SOURCE_DIRECTORY/PuppyGo.iOS"
-for entry in "$APPCENTER_SOURCE_DIRECTORY/PuppyGo.iOS"
+for entry in "$APPCENTER_SOURCE_DIRECTORY/PuppyGo.iOS"/*
 do
     echo "$entry"
 done
 
 echo "> Contents of $APPCENTER_SOURCE_DIRECTORY/PuppyGo.iOS/packages"
-for entry in "$APPCENTER_SOURCE_DIRECTORY/PuppyGo.iOS/packages"
+for entry in "$APPCENTER_SOURCE_DIRECTORY/PuppyGo.iOS/packages"/*
 do
     echo "$entry"
 done
 
 echo "> Contents of $APPCENTER_SOURCE_DIRECTORY/PuppyGo.iOS/packages/Xamarin.UITest.*/tools"
-for entry in "$APPCENTER_SOURCE_DIRECTORY/PuppyGo.iOS/packages/Xamarin.UITest.*/tools"
+for entry in "$APPCENTER_SOURCE_DIRECTORY/PuppyGo.iOS/packages/Xamarin.UITest.*/tools"/*
 do
     echo "$entry"
 done
