@@ -19,6 +19,9 @@ namespace PuppyGo
         protected override void OnStart()
         {
             // Handle when your app starts
+
+            var unused = "this is unused so it should cause the build to fail";
+
         }
 
         protected override void OnSleep()
